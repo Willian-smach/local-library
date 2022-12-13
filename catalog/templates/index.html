@@ -1,0 +1,16 @@
+{% extends "base_structure.html" %}
+
+{% block title%} <title>Home</title> {%endblock%}
+
+{% block content %}
+  <h1>Biblioteca Local Home</h1>
+  <p>Bem-vindo a Biblioteca Local</p>
+  <h2>Conteúdo dinâmino</h2>
+  <p>A Biblioteca tem os seguintes registros:</p>
+  <ul>
+    <li><strong>Livros:</strong> {{ num_books }}</li>
+    <li><strong>Copias:</strong> {{ num_instances }}</li>
+    <li><strong>Copias Disponíveis:</strong> {{ num_instances_available }}</li>
+    <li><strong>Autores:</strong> {{ num_authors }}</li>
+  </ul>
+{% endblock %}
